@@ -32,8 +32,8 @@ with st.sidebar:
     if st.button("Predict"):
         prediction = best_rf.predict([[sepal_l, sepal_w, petal_l, petal_w]])[0]
         st.success(f"Predicted Species: **{iris.target_names[prediction]}**")
-        st.image(f"https://raw.githubusercontent.com/your-repo/iris_images/main/{iris.target_names[prediction]}.jpg")
-
+        st.image(f"https://raw.githubusercontent.com/Rabby0501/iris-classifier-app/main/images/{iris.target_names[prediction]}.jpg")
+        
 # Main content tabs
 tab1, tab2 = st.tabs(["Project Steps", "Technical Details"])
 
